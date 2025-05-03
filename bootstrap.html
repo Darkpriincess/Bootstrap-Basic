@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Knowledge Check</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container p-3">
+    <!--Regristration Form-->
+    <form>
+        <div class="row p-3">
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
+          <form class="needs-validation" novalidate>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control is-invalid" id="email" required>
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control is-invalid" id="password" required>
+              <div class="invalid-feedback">
+                PLease enter Password.
+              </div>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="termsCheckbox" required>
+              <label class="form-check-label" for="termsCheckbox">
+                I agree to the terms and conditions
+              </label>
+            </div>
+          <div class="col-md-2">
+            <button type="submit" class="btn btn-success">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--Data Table-->
+    <div class="table-responsive">
+      <table class="table table-striped table-hover table-bordered align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>John Smith</td>
+            <td>john@smith.com</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jane Smith</td>
+            <td>jane@smith.com</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Bob Johnson</td>
+            <td>bob@johnson.com</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Alice Brown</td>
+            <td>alice@brown.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--Buttons-->
+        <button type="button" class="btn btn-dark w-25 m-3">Button</button>
+        <button type="button" class="btn btn-secondary w-25 d-none d-md-block m-3">Button 2</button>
+    </div>
+    
+    <!--Images-->
+    <div class="container-fluid m-3">
+        <img src="https://s1.1zoom.me/prev/587/Waves_Closeup_Water_586392_600x400.jpg" 
+            class="img-fluid col-12" alt="Centered Image">
+        <img src="https://s1.1zoom.me/prev/515/Canada_Parks_Mountains_Lake_Forests_Scenery_514472_600x400.jpg" class="rounded-circle img-fluid pt-3" 
+            alt="Circular image">
+    </div>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"aria-controls="navbarNav" 
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                 <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
